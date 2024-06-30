@@ -10,6 +10,7 @@ import {
   PoToolbarAction,
   PoToolbarModule,
 } from '@po-ui/ng-components';
+import { PoTemplatesModule } from '@po-ui/ng-templates';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import {
     PoMenuModule,
     PoPageModule,
     HttpClientModule,
+    PoTemplatesModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
@@ -32,5 +34,9 @@ export class AppComponent {
   actions: Array<PoToolbarAction>=[{label:"Xpto"}];
   private onClick() {
     alert('Clicked in menu item');
+  }
+
+  test(alo:any){
+     console.log(alo)
   }
 }
